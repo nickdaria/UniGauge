@@ -50,7 +50,7 @@ class TRGBModule {
         bool _useDisplay;
         bool _useLvgl;
         bool _useDisplayTouch;
-        const uint8_t* _bootImage;
+        const uint8_t* _bootImage = NULL;
 
         //  Display Supporting Functions
         lv_disp_draw_buf_t disp_buf; // contains internal graphic buffer(s) called draw buffer(s)

@@ -1,7 +1,5 @@
 #pragma once
 
-#pragma once
-
 #define LCD_PIXEL_CLOCK_HZ     (8 * 1000 * 1000)
 #define LCD_BK_LIGHT_ON_LEVEL  1
 #define LCD_BK_LIGHT_OFF_LEVEL !LCD_BK_LIGHT_ON_LEVEL

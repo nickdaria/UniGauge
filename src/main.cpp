@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <TRGB.h>
 #include "img.h"
+#include <elapsedMillis.h>
 //#include "ui/ui.h"
 
 TRGBModule TRGB;
@@ -18,5 +19,4 @@ void setup() {
 
 void loop() {
     //lv_timer_handler();
-    
 }

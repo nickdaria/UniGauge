@@ -208,10 +208,14 @@ void TRGBModule::draw_boot_logo() {
     }
 
     //  Print bitmap boot image
-    esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, 480, 480, this->_bootImage);
+    esp_lcd_panel_draw_bitmap(panel_handle, 0, 0, LCD_H_RES, LCD_V_RES, this->_bootImage);
 }
 
 void TRGBModule::lvgl_start() {
+    if(this->_useLvgl == false) {
+        return;
+    }
+
     lv_init();
 	// alloc draw buffers used by LVGL from PSRAM
 	lv_color_t *buf1 = (lv_color_t*) heap_caps_malloc(
